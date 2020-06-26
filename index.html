@@ -3,32 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>サンプル</title>
-  <link rel="stylesheet" href="app.css">
+  <!-- <link rel="stylesheet" href="app.css"> -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-  <script src="https://use.fontawesome.com/e3ae05b8e6.js"></script>
 </head>
 <body>
-    <div id="main">
-        <h1>カテゴリでフィルタリングするUI DEMO</h1>
-        <div>
-          <ul class="category_list">
-            <li v-for="category in category_lists">
-              <input type="checkbox" 
-                v-bind:id="category" 
-                v-bind:value="category" 
-                v-model="preview">
-              <label v-bind:for="category">{{ category }}</label>
-            </li>
-          </ul>
-        </div>
-        <p>選択しているカテゴリ：{{ preview }}</p>
-        <ul class="entry_list">
-          <li v-for="post in posts" v-show="post.display">
-            <p><a v-bind:href="post.url">{{ post.name }}</a></p>
-            <ul><li v-for="category in post.categories">{{ category }}</li></ul>
-          </li>
-        </ul>
-      </div>
+</div>
 </body>
-<script src= "app.js"></script>
+<script src= "app2.js"></script>
 </html>
